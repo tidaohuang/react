@@ -20,10 +20,6 @@ export enum Section {
 
 
 export default class ContentStore {
-
-
-
-
     title: string = 'summary';
     activeSection: Section = Section.Summary;
     activeUdemyTags: string[] = en.SectionEducation.tags.map(x => x.name);

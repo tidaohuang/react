@@ -1,1 +1,1 @@
-export const BASE = '/react-cv';
+export const BASE = '/react';
