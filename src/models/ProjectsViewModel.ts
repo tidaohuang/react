@@ -1,4 +1,4 @@
-import { Tag, Tag2 } from "./EducationViewModel";
+import { Tag2 } from "./EducationViewModel";
 
 export interface Project {
     img: string,
