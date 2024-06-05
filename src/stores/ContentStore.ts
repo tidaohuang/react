@@ -76,6 +76,7 @@ export default class ContentStore {
     }
 
     async sendEmail(email: string, name: string, message: string): Promise<boolean> {
+        console.log(JSON.stringify({ email, name, message }));
         return Promise.resolve(false);
     }
 
