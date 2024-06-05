@@ -1,0 +1,119 @@
+
+
+.btn-groups {
+    margin-right: 3rem;
+}
+
+.btn-groups .btn {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    line-height: 0;
+    padding: 2rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    border-width: .2rem;
+    border-style: solid;
+
+    background-color: var(--greywhite);
+    border-color: var(--greywhite);
+    color: var(--black100);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--greywhite);
+}
+
+.btn.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--black);
+}
+
+.btn.btn-primary:hover {
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.btn.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--black);
+}
+
+.btn.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+.btn.btn-blue {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: var(--black);
+}
+
+.btn.btn-blue:hover {
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.btn.btn-lightblue {
+    background-color: var(--lightblue);
+    border-color: var(--lightblue);
+    color: var(--black);
+}
+
+.btn.btn-lightblue:hover {
+    background-color: transparent;
+    color: var(--lightblue);
+}
+
+.btn.btn-green {
+    background-color: var(--green);
+    border-color: var(--green);
+    color: var(--black);
+}
+
+.btn.btn-green:hover {
+    background-color: transparent;
+    color: var(--green);
+}
+
+.btn.btn-orange {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: var(--black);
+}
+
+.btn.btn-orange:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+.btn.btn-pink {
+    background-color: var(--pink);
+    border-color: var(--pink);
+    color: var(--black);
+}
+
+.btn.btn-pink:hover {
+    background-color: transparent;
+    color: var(--pink);
+}
+
+.btn.btn-yellow {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+    color: var(--black);
+}
+
+.btn.btn-yellow:hover {
+    background-color: transparent;
+    color: var(--yellow);
+}

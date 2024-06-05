@@ -1,0 +1,162 @@
+.bg-blue {
+    background-color: var(--primary);
+}
+
+.bg-light-blue {
+    background-color: var(--lightblue);
+}
+
+.bg-green {
+    background-color: var(--secondary);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+
+
+
+
+
+
+.education-tags-wrapper {
+    margin-top: 3rem;
+}
+
+.education-tag {
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: .75rem 1.6rem;
+    border-radius: .8rem;
+    cursor: pointer;
+
+    border: solid .2rem black;
+}
+
+.education-tag.bg-blue {
+    border-color: var(--primary);
+}
+
+.education-tag.bg-light-blue {
+    border-color: var(--lightblue);
+}
+
+.education-tag.bg-green {
+    border-color: var(--secondary);
+}
+
+.education-tag.bg-pink {
+    border-color: var(--pink);
+}
+
+.education-tag.bg-yellow {
+    border-color: var(--yellow);
+}
+
+.education-tag-name {
+    font-family: "Noto Sans", sans-serif;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.education-tag.inactive {
+    background-color: transparent;
+}
+
+.education-tag.inactive .education-tag-name {
+    color: var(--white);
+}
+
+
+.education-tag.active:hover {
+    background-color: transparent;
+}
+
+.education-tag.active:hover .education-tag-name {
+    color: var(--white);
+}
+
+
+.education-tag.inactive:hover .education-tag-name {
+    color: var(--black);
+}
+
+.bg-blue.inactive:hover {
+    background-color: var(--primary);
+}
+
+.bg-light-blue.inactive:hover {
+    background-color: var(--lightblue);
+}
+
+.bg-green.inactive:hover {
+    background-color: var(--secondary);
+}
+
+.bg-pink.inactive:hover {
+    background-color: var(--pink);
+}
+
+.bg-yellow.inactive:hover {
+    background-color: var(--yellow);
+}
+
+
+
+
+
+
+/* udemy */
+.education-udemy-wrapper {
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 10rem;
+}
+
+.education-udemy:first-child {
+    border-top: .5rem solid var(--greywhite);
+}
+
+.education-udemy {
+    border-top: .2rem solid var(--greywhite);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+}
+
+.education-udemy-name {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.education-udemy-name:hover {
+    color: var(--primary);
+}
+
+.education-udemy-tag {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--black);
+
+    margin: 0;
+    margin-left: .5rem;
+    margin-bottom: .7rem;
+    padding: .5rem 1rem;
+    border-radius: .8rem;
+}
+
+/* end of udemy */

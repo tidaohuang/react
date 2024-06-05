@@ -1,0 +1,40 @@
+
+
+/* section certification */
+.badges-card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.badge-card {
+    width: 100rem;
+    margin-right: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+}
+
+.badge-image-wrapper {
+    margin: auto 0;
+}
+
+.badge-image {
+    width: 20rem;
+    margin-left: -1.3rem;
+}
+
+.badge-info {
+    padding: 0 2rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--primary)
+}
+
+.badge-meta {
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1.5rem 0;
+}
+
+/* end of section certification */

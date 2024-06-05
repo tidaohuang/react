@@ -1,0 +1,71 @@
+.label {
+
+    display: inline-block;
+
+    line-height: 0;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+    position: relative;
+    border-radius: 0 .3rem .3rem 0;
+    -webkit-transition: none;
+    transition: none;
+
+    background-color: var(--white);
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: max-content;
+
+}
+
+
+.label-primary {
+    background-color: var(--primary);
+}
+
+.label-secondary {
+    background-color: var(--secondary);
+}
+
+.label-blue {
+    background-color: var(--blue);
+}
+
+.label-lightblue {
+    background-color: var(--lightblue);
+}
+
+.label-green {
+    background-color: var(--green);
+}
+
+.label-orange {
+    background-color: var(--orange);
+}
+
+.label-pink {
+    background-color: var(--pink);
+}
+
+.label-yellow {
+    background-color: var(--yellow);
+}
+
+
+
+.label:before {
+    position: absolute;
+    -webkit-transform: translateY(-50%) translateX(50%) rotate(-45deg);
+    transform: translateY(-50%) translateX(50%) rotate(-45deg);
+    top: 50%;
+    right: 100%;
+    content: '';
+    background-color: inherit;
+    background-image: none;
+    width: 2.8rem;
+    height: 2.8rem;
+    -webkit-transition: none;
+    transition: none;
+}

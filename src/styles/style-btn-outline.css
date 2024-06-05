@@ -1,0 +1,94 @@
+.btn.btn-outline-primary {
+    background-color: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
+
+.btn.btn-outline-secondary {
+    background-color: transparent;
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.btn.btn-outline-secondary:hover {
+    background-color: var(--secondary);
+    color: var(--black);
+}
+
+
+.btn.btn-outline-blue {
+    background-color: transparent;
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.btn.btn-outline-blue:hover {
+    background-color: var(--blue);
+    color: var(--black);
+}
+
+
+.btn.btn-outline-lightblue {
+    background-color: transparent;
+    border-color: var(--lightblue);
+    color: var(--lightblue);
+}
+
+.btn.btn-outline-lightblue:hover {
+    background-color: var(--lightblue);
+    color: var(--black);
+}
+
+.btn.btn-outline-green {
+    background-color: transparent;
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.btn.btn-outline-green:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+
+
+.btn.btn-outline-orange {
+    background-color: transparent;
+    border-color: var(--orange);
+    color: var(--orange);
+}
+
+.btn.btn-outline-orange:hover {
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+
+.btn.btn-outline-pink {
+    background-color: transparent;
+    border-color: var(--pink);
+    color: var(--pink);
+}
+
+.btn.btn-outline-pink:hover {
+    background-color: var(--pink);
+    color: var(--black);
+}
+
+
+.btn.btn-outline-yellow {
+    background-color: transparent;
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.btn.btn-outline-yellow:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}

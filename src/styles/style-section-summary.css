@@ -1,0 +1,17 @@
+
+/* section summary */
+.summary-list {
+    margin: 0;
+    color: var(--white);
+    margin-top: 3rem;
+    margin-right: 3rem;
+}
+
+.summary-item {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+}
+
+/* end of section summary */

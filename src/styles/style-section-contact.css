@@ -1,0 +1,99 @@
+.contact {
+    padding-bottom: 10rem;
+}
+
+
+.contact-form {
+    margin: 3rem 0;
+    width: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contact-form-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contact-form-user .form-group:first-child {
+    margin-right: 3rem;
+}
+
+.form-group {
+    color: var(--white);
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.form-group small {
+    color: var(--yellow)
+}
+
+.form-control {
+    border: .2rem solid var(--greywhite);
+    border-radius: .5rem;
+    background-color: transparent;
+    margin: .5rem 0;
+    font-size: 2rem;
+    color: var(--white);
+    padding: .8rem;
+}
+
+.contact-form-meta {
+    color: var(--white);
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+
+.contact-form-meta .hightlight {
+    color: var(--primary);
+}
+
+
+.system-message {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.cv-download {
+    width: 100rem;
+}
+
+.cv-download-btn {
+    padding: 1rem;
+    background-color: var(--secondary);
+    border: .2rem solid var(--secondary);
+    border-radius: .5rem;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cv-download-btn:hover {
+    background-color: transparent;
+}
+
+.cv-download-btn:hover span {
+    color: var(--white);
+}
+
+.cv-download-btn span {
+    margin-left: 15rem;
+}

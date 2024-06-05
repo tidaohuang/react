@@ -1,0 +1,249 @@
+/* sidebar */
+.sidebar {
+    width: 8rem;
+    height: calc(100% - 3.3rem);
+    background-color: var(--black100);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+}
+
+
+.menu-icons-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-icons-item {
+    position: relative;
+    width: 7rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.menu-icons-item:hover .menu-link {
+    color: var(--white);
+}
+
+
+.menu-link {
+    font-size: 3rem;
+    color: #a8a8a8;
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.menu-active {
+    border-left: .5rem solid var(--primary);
+}
+
+.menu-active .menu-link {
+    color: var(--white);
+}
+
+/* navigation */
+.navigation {
+    left: -25rem;
+    width: 25rem;
+    height: calc(100% - 3.3rem);
+    border-left: .3rem solid var(--black);
+    z-index: 5;
+
+
+    background-color: var(--black50);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    /* height: 25rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-item {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5rem;
+}
+
+.navigation-item:first-child {
+    margin-left: 2rem;
+}
+
+.navigation-link {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: #a8a8a8;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navigation-link:hover {
+    color: var(--white);
+}
+
+.navigation-link:hover .arrow-down::before,
+.navigation-link:hover .arrow-right::before {
+    color: var(--white);
+}
+
+.navigation-active .navigation-link,
+.navigation-active .arrow-right::before,
+.navigation-active .arrow-down::before {
+    color: var(--white);
+}
+
+.arrow-down::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    color: #a8a8a8;
+    position: relative;
+    left: -1rem;
+}
+
+.arrow-right::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    color: #a8a8a8;
+    position: relative;
+    left: -1rem;
+}
+
+
+#sidebar:checked~.navbar .navigation {
+    left: 8rem;
+}
+
+#sidebar:checked~.container {
+    margin-left: 33.2rem;
+}
+
+/* language switch */
+
+.language {
+    padding-bottom: 2rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+
+    width: 6rem;
+    height: 3.5rem;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    top: .8rem;
+    left: .8rem;
+    background-color: var(--primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+#language:checked+.switch>.slider {
+    background-color: var(--white);
+}
+
+#language:focus+.switch>.slider {
+    box-shadow: 0 0 1px var(--white);
+}
+
+#language:checked+.switch>.slider:before {
+    -webkit-transform: translateX(2.6rem);
+    -ms-transform: translateX(2.6rem);
+    transform: translateX(2.6rem);
+}
+
+.slider.round {
+    border-radius: 3.5rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.left,
+.right {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: var(--primary);
+    position: absolute;
+    cursor: pointer;
+}
+
+.left {
+    content: 'EN';   
+    margin-top: .85rem;
+    margin-left: 1rem;
+    z-index: -1;
+}
+
+#language:checked+.switch .left {
+    z-index: 0;
+}
+
+
+.right {
+    content: 'EN';
+    margin-top: .85rem;
+    margin-left: 3rem;
+    z-index: 0;
+}
+
+#language:checked+.switch .right {
+    z-index: -1;
+}
+
+/* end of language switch */
+
+
+/* end of navigation */
+/* end of sidebar */

@@ -1,0 +1,27 @@
+
+/* section home */
+
+.content-items {
+    margin: 0;
+    padding: 0;
+
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+}
+
+.content-item {
+    font-family: "Noto Sans", sans-serif;
+    color: var(--white);
+    font-size: 2rem;
+
+    margin-right: 6rem;
+}
+
+.content-item-meta {
+    color: var(--primary);
+}
+
+/* end of section home */
