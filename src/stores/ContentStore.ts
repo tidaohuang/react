@@ -1,8 +1,8 @@
 import { makeAutoObservable } from "mobx";
 import { en } from "../languages/en";
 
-// import * as nodemailer from 'nodemailer';
-// import nodemailer from 'nodemailer';
+
+import emailjs from '@emailjs/browser';
 
 export enum Section {
     Summary = 'SectionSummary',
@@ -52,7 +52,6 @@ export default class ContentStore {
 
     }
 
-
     updateUdemyTag(name: string) {
 
         if (name === 'All') {
@@ -79,22 +78,27 @@ export default class ContentStore {
     }
 
     async sendEmail(email: string, name: string, message: string): Promise<boolean> {
-        console.log(JSON.stringify({ email, name, message }));
-        
         const useremail = 'henry.2039@gmail.com';
+        try {
+            emailjs.init(import.meta.env.VITE_EMAIL_USER_ID);
+            await emailjs.send(
+                import.meta.env.VITE_EMAIL_SERVICE_ID,
+                import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+                {
+                    email: email,
+                    name: name,
+                    message: message,
+                    replyTo: useremail,
+                    cc: useremail
+                }
+            )
+            return Promise.resolve(true);
+        } catch (error) {
+            console.log(error);
+            return Promise.resolve(false);
+        }
 
-        // const transporter = nodemailer.createTransport({
-        //     service: 'gmail',
-        //     auth: {
-        //         type: 'OAuth2',
-        //         user: useremail,
-        //         clientId: import.meta.env.VITE_GMAIL_CLIENT_ID,
-        //         clientSecret: import.meta.env.VITE_GMAIL_CLIENT_SECRET,
-        //         refreshToken: import.meta.env.VITE_GMAIL_REFRESH_TOKEN
-        //     }
-        // })
-        
-        return Promise.resolve(true);
+
     }
 
 }
