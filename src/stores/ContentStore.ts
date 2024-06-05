@@ -1,6 +1,9 @@
 import { makeAutoObservable } from "mobx";
 import { en } from "../languages/en";
 
+// import * as nodemailer from 'nodemailer';
+// import nodemailer from 'nodemailer';
+
 export enum Section {
     Summary = 'SectionSummary',
     Education = 'SectionEducation',
@@ -77,7 +80,21 @@ export default class ContentStore {
 
     async sendEmail(email: string, name: string, message: string): Promise<boolean> {
         console.log(JSON.stringify({ email, name, message }));
-        return Promise.resolve(false);
+        
+        const useremail = 'henry.2039@gmail.com';
+
+        // const transporter = nodemailer.createTransport({
+        //     service: 'gmail',
+        //     auth: {
+        //         type: 'OAuth2',
+        //         user: useremail,
+        //         clientId: import.meta.env.VITE_GMAIL_CLIENT_ID,
+        //         clientSecret: import.meta.env.VITE_GMAIL_CLIENT_SECRET,
+        //         refreshToken: import.meta.env.VITE_GMAIL_REFRESH_TOKEN
+        //     }
+        // })
+        
+        return Promise.resolve(true);
     }
 
 }
